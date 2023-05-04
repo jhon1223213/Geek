@@ -1,6 +1,5 @@
 package JuegoCraps;
 
-
 /**
  * Esta clase ModelCraps aplica las reglas de los dados
  * Estado 1: GANO
@@ -12,8 +11,6 @@ package JuegoCraps;
  * @version
  *
  */
-
-
 
 public class ModelCraps {
     private Dado dado1,dado2;
@@ -44,13 +41,11 @@ public class ModelCraps {
         caras[0]=dado1.getCara();
         caras[1]=dado2.getCara();
         tiro = caras[0]+caras[1];
-
     }
 
     /**
      * Establece el estado del juego
      */
-
     public void determinarJuego(){
         if (flag==0){
             if(tiro==7 || tiro == 11){
@@ -121,24 +116,4 @@ public class ModelCraps {
         return caras;
     }
 
-
-
-
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
